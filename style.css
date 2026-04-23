@@ -124,6 +124,47 @@ h1, h2, h3, h4, h5, h6 {
     transition: var(--transition-smooth);
 }
 
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.lang-toggle {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--glass-border);
+    padding: 0.4rem 0.8rem;
+    border-radius: 20px;
+}
+
+.lang-btn {
+    background: none;
+    border: none;
+    color: var(--text-muted);
+    font-family: var(--font-body);
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition-smooth);
+    padding: 0;
+}
+
+.lang-btn:hover {
+    color: var(--text-main);
+}
+
+.lang-btn.active {
+    color: var(--accent-gold);
+}
+
+.lang-sep {
+    color: var(--text-muted);
+    font-size: 0.8rem;
+}
+
 .navbar.scrolled {
     background: rgba(10, 11, 16, 0.85);
     backdrop-filter: blur(15px);
